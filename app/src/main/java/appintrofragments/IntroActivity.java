@@ -1,13 +1,11 @@
-package com.example.angelo.myapplication;
+package appintrofragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
+import com.example.angelo.myapplication.R;
 import com.github.paolorotolo.appintro.AppIntro;
-import com.github.paolorotolo.appintro.AppIntroFragment;
-
-import AppIntroFragments.SlideFragment;
 
 /**
  * Created by angelo on 27/09/17.
