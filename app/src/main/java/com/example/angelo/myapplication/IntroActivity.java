@@ -2,6 +2,7 @@ package com.example.angelo.myapplication;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
@@ -18,5 +19,17 @@ public class IntroActivity extends AppIntro {
         super.onCreate(savedInstanceState);
         addSlide(SlideFragment.newInstance(R.layout.slide_fragment,"testo prova ciao"));
         addSlide(SlideFragment.newInstance(R.layout.slide_fragment,"slide 2"));
+    }
+
+    @Override
+    public void onSkipPressed(Fragment currentFragment) {
+        super.onSkipPressed(currentFragment);
+        finish();
+    }
+
+    @Override
+    public void onDonePressed(Fragment currentFragment) {
+        super.onDonePressed(currentFragment);
+        finish();
     }
 }
